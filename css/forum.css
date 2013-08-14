@@ -1,0 +1,155 @@
+/* 
+    Document   : forum
+    Created on : 12-Aug-2013, 23:19:31
+    Author     : patrickdoyle
+    Description:
+        Used for styling the forum elements for the main column
+*/
+
+root { 
+    display: block;
+}
+.forum-block-wrapper{
+    margin: 2% 0;
+}
+.forum-block-wrapper h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    color: #777;
+    border-bottom: 4px solid #eee;
+    font-size: 1em;
+    margin: 0;
+    padding: 2px 0;
+}
+.forum-block-wrapper .forum-search{
+    padding: 0.5%;
+    background: #fafafa;
+    border: 1px solid #eee;
+}
+.forum-block-wrapper .forum-search-box{
+    float:left;
+}
+.forum-block-wrapper .forum-search-box p{
+    color: #1A539A;
+    font: 0.9em Arial,Helvetica,sans-serif;
+}
+.forum-block-wrapper .forum-search-box p:hover{
+    text-decoration: underline;
+}
+.forum-block-wrapper .forum-user-tools *{
+    float:right;
+    font-size: 0.9em;
+}
+.forum-block-wrapper .forum-user-tools a{
+    display:block;
+    padding: 0 5px;
+    margin: 5px 0; 
+    color:#1A539A;
+    border-left: 2px solid #bbb;
+}
+.forum-block-wrapper .forum-user-tools a:hover{
+    text-decoration: underline;
+}
+.forum-block-wrapper .forum-user-tools label{
+    display:block;
+    padding: 0 8px;
+    margin: 5px 0; 
+    color:#808080;
+}
+
+.forum-block-wrapper h3{
+    font-weight:bold;
+    padding: 1%;
+    margin: 0;
+    text-align: left;
+    color: #555;
+    font-size: 12px;
+    background: #fafafa;
+}
+.forum-row{
+    padding: 0.5% 1%;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+.forum-row .forum-title h4{
+    color: #1A539A;
+    font: 1em Arial, Helvetica, sans-serif;
+    margin: 5px 0;
+    font-weight: bold;
+}
+.forum-row .forum-title h4:hover{
+    text-decoration: underline;
+}
+.forum-row .forum-title{
+    float:left;
+    width:66%;
+}
+.forum-row p{
+    font: 11px Arial, Helvetica, sans-serif;
+    margin: 5px 0;
+    color:#333;
+}
+.forum-row .sub-forum-data{
+    float:right;
+    width:12%;
+    padding: 5px 2%;
+    text-align: center;
+    border-left: 1px dashed #eee;
+}
+.forum-row .sub-forum-data .new-posts{
+    color: #000000;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:650px)
+{
+    .forum-row .forum-title{
+        float:none;
+        width:100%;
+    }
+    .forum-row .sub-forum-data{
+        float:left;
+        width:45%;
+    }
+    .forum-user-tools{
+        clear:left;
+        float:none;
+        width:100%;
+    }
+    .forum-block-wrapper .forum-user-tools *{
+        float:left;
+    }
+    
+    .forum-block-wrapper .forum-user-tools a{
+        border-right: 2px solid #bbb;
+        border-left: none;
+    }
+    .forum-row .forum-title h4{
+        text-align: center;
+        font-size: 1.6em;
+    }
+}
+@media only screen and (max-width:920px)
+{
+    .forum-user-tools{
+        clear:left;
+        float:none;
+        width:100%;
+    }
+    .forum-block-wrapper .forum-user-tools *{
+        float:left;
+    }
+    
+    .forum-block-wrapper .forum-user-tools a{
+        border-right: 2px solid #bbb;
+        border-left: none;
+    }
+}
+@media only screen and (max-width:920px)
+{ 
+    .forum-block-wrapper .forum-user-tools label{
+        padding: 0 3px 0 2px;
+    }
+}
